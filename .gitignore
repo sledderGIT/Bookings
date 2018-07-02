@@ -10,3 +10,5 @@ iOS/\.DS_Store
 Bookings\.Core/bin/
 
 Bookings\.Core/obj/
+
+\.vs/
