@@ -1,0 +1,12 @@
+
+packages/
+
+iOS/bin/
+
+iOS/obj/
+
+iOS/\.DS_Store
+
+Bookings\.Core/bin/
+
+Bookings\.Core/obj/

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="cxk-wN-pdQ" customClass="BookingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalmikovs Sergey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3V-X7-TpG">
+                        <rect key="frame" x="16" y="8" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="igm-f5-Xec">
+                        <rect key="frame" x="16" y="31" width="288" height="27.5"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issued" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-0M-wTD">
+                        <rect key="frame" x="16" y="60.5" width="42.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marine, Refundable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T58-Gp-qEX">
+                        <rect key="frame" x="66.5" y="60.5" width="125.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fz0-0M-wTD" firstAttribute="leading" secondItem="igm-f5-Xec" secondAttribute="leading" id="AwM-8S-2mx"/>
+                    <constraint firstAttribute="bottom" secondItem="T58-Gp-qEX" secondAttribute="bottom" constant="6" id="CiU-p2-Zlp"/>
+                    <constraint firstAttribute="bottom" secondItem="fz0-0M-wTD" secondAttribute="bottom" constant="6" id="EaI-cZ-uLl"/>
+                    <constraint firstItem="T58-Gp-qEX" firstAttribute="leading" secondItem="fz0-0M-wTD" secondAttribute="trailing" constant="8" id="LpH-Lb-MOd"/>
+                    <constraint firstItem="o3V-X7-TpG" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16" id="Mb8-FJ-sIw"/>
+                    <constraint firstAttribute="trailing" secondItem="o3V-X7-TpG" secondAttribute="trailing" constant="16" id="UGn-yU-W07"/>
+                    <constraint firstAttribute="trailing" secondItem="igm-f5-Xec" secondAttribute="trailing" constant="16" id="Z18-JS-LsY"/>
+                    <constraint firstItem="fz0-0M-wTD" firstAttribute="top" secondItem="igm-f5-Xec" secondAttribute="bottom" constant="2" id="bhs-AK-pYr"/>
+                    <constraint firstItem="igm-f5-Xec" firstAttribute="top" secondItem="o3V-X7-TpG" secondAttribute="bottom" constant="2" id="hgP-Ku-OHQ"/>
+                    <constraint firstItem="igm-f5-Xec" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16" id="kuU-5A-Zkk"/>
+                    <constraint firstItem="o3V-X7-TpG" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="8" id="xVB-Vn-Qu8"/>
+                    <constraint firstItem="T58-Gp-qEX" firstAttribute="top" secondItem="igm-f5-Xec" secondAttribute="bottom" constant="2" id="y73-wQ-gth"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblActiveStatus" destination="fz0-0M-wTD" id="r4K-bh-qP6"/>
+                <outlet property="lblConditions" destination="T58-Gp-qEX" id="XWh-sl-qDQ"/>
+                <outlet property="lblPaxName" destination="o3V-X7-TpG" id="igx-a4-0en"/>
+                <outlet property="stackLegs" destination="igm-f5-Xec" id="Fee-hB-U4G"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

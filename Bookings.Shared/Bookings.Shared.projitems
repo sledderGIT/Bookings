@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{5DB579CF-5733-4F87-90BF-8FA4EF3D62AA}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Bookings.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\BookingDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\LegDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\MetadataDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\PriceDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTO\TermDTO.cs" />
+  </ItemGroup>
+</Project>

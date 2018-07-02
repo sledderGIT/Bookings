@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="6.1.2" />
+    <PackageReference Include="Refit" Version="4.6.16" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="ViewModels\Home\" />
+    <Folder Include="Services\Booking\" />
+    <Folder Include="Domain\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Filters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DTO\BookingDTO.cs" />
+    <Compile Remove="DTO\Leg.cs" />
+  </ItemGroup>
+  <Import Project="..\Bookings.Shared\Bookings.Shared.projitems" Label="Shared" Condition="Exists('..\Bookings.Shared\Bookings.Shared.projitems')" />
+</Project>

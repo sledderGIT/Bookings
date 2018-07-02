@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="tblBookings" destination="jaY-bl-J4v" id="ZWg-Bd-5f3"/>
+                <outlet property="vStroke" destination="bqT-7r-AFN" id="yl8-8R-WbS"/>
+                <outlet property="vTitle" destination="brz-an-Cho" id="1WU-XQ-26m"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brz-an-Cho">
+                    <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wc-OS-3Hm">
+                            <rect key="frame" x="8" y="11" width="83" height="28"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4wc-OS-3Hm" secondAttribute="bottom" constant="11" id="8Bn-FY-rEH"/>
+                        <constraint firstItem="4wc-OS-3Hm" firstAttribute="leading" secondItem="brz-an-Cho" secondAttribute="leading" constant="8" id="DUJ-HR-v0x"/>
+                        <constraint firstItem="4wc-OS-3Hm" firstAttribute="top" secondItem="brz-an-Cho" secondAttribute="top" constant="11" id="KWc-Sa-eba"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-7r-AFN">
+                    <rect key="frame" x="0.0" y="94" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="I8x-xa-G2w"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="44" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="jaY-bl-J4v">
+                    <rect key="frame" x="0.0" y="95" width="375" height="683"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bqT-7r-AFN" firstAttribute="top" secondItem="brz-an-Cho" secondAttribute="bottom" id="Ax5-hS-fdC"/>
+                <constraint firstItem="jaY-bl-J4v" firstAttribute="top" secondItem="bqT-7r-AFN" secondAttribute="bottom" id="Cwh-aR-ass"/>
+                <constraint firstItem="jaY-bl-J4v" firstAttribute="leading" secondItem="urb-la-zjp" secondAttribute="leading" id="P3e-ik-Mlr"/>
+                <constraint firstItem="bqT-7r-AFN" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Rys-LT-pTk"/>
+                <constraint firstItem="jaY-bl-J4v" firstAttribute="trailing" secondItem="urb-la-zjp" secondAttribute="trailing" id="Vfk-L2-iEo"/>
+                <constraint firstItem="brz-an-Cho" firstAttribute="trailing" secondItem="urb-la-zjp" secondAttribute="trailing" id="ZLd-1m-JNb"/>
+                <constraint firstItem="urb-la-zjp" firstAttribute="bottom" secondItem="jaY-bl-J4v" secondAttribute="bottom" id="gHy-9O-sGj"/>
+                <constraint firstItem="brz-an-Cho" firstAttribute="top" secondItem="urb-la-zjp" secondAttribute="top" id="qT6-Ha-Pm2"/>
+                <constraint firstItem="brz-an-Cho" firstAttribute="leading" secondItem="urb-la-zjp" secondAttribute="leading" id="ssc-ka-dlN"/>
+                <constraint firstAttribute="trailing" secondItem="bqT-7r-AFN" secondAttribute="trailing" id="ujf-W9-1e3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="urb-la-zjp"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>
